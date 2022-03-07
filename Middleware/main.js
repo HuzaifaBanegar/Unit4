@@ -18,7 +18,7 @@ app.get(`/books/:name`, singleBook, function(req, res){
 function singleBook(req, res, next)
 {
         req.name= req.params.name;
-        if("GameOfThrones"==req.name||"HarryPotter"== req.name)
+        if("GameOfThrones" == req.name||"HarryPotter" == req.name)
         {
             next();
         }
